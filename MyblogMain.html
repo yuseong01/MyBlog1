@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Basic Page</title>
+    <link rel="stylesheet" href="MyblogMain\MyblogMain.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script type="text/javascript" src="Menu.js"></script>
+    <script type="text/javascript" src="Search.js"></script>
+    <style>
+    table{
+      width: 100%;
+      height: 100px;
+    }
+    button{
+      color:black;
+      background-color:white;
+      font-size:1.0em;
+      border: 0;
+      outline: 0;
+    }
+    .list{
+      font-family: 'Segoe Script', '나눔스퀘어라운드', ‘맑은 고딕’, ‘Malgun Gothic’, Gothic, sans-serif;
+    }
+    tab1 {padding-left: 1em; }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $(".list").click(function(){
+          $("table").toggle();
+        });
+      });
+    </script>
+</head>
+<body>
+  <div id="page-wrapper">
+    <hr class="hr1">
+    <header id="main-header">
+      <hgroup>
+        <h1 class="master-title"><a href="MyblogMain.html">✿ 오늘도 먹는 유성 ๑•‿•๑ ✿</a></h1>
+        <h2 class="master-description"> YuSeong's Blog </h2>
+      </hgroup>
+    </header>
+    <nav id="main-navigation">
+        <ul class="outer-menu">
+          <li class="outer-menu-item">
+            <span class="menu-title"><a href="Intro.html"><b>프롤로그</b></span>
+            <ul class="inner-menu">
+              <li class="inner-menu-item"><a href="Intro.html">자기소개(1)</a></li>
+            </ul>
+          </li>
+          <li class="outer-menu-item">
+            <span class="menu-title"><b><a href="GoodplaceMain.html">맛집</b></span>
+            <ul class="inner-menu">
+              <li class="inner-menu-item"><a href="GoodplaceSeoul.html">서울(1)</a></li>
+              <li class="inner-menu-item"><a href="GoodplaceUlsan.html">울산(1)</a></li>
+            </ul>
+          </li>
+          <li class="outer-menu-item">
+            <span class="menu-title"><a href="TalkMain.html"><b>수다떨기</b></span>
+            <ul class="inner-menu">
+              <li class="inner-menu-item"><a href="Dog.html">멍뭉이(1)</a></li>
+              <li class="inner-menu-item"><a href="Movie.html">영화(1)</a></li>
+              <li class="inner-menu-item"><a href="Drama.html">드라마(1)</a></li>
+              <li class="inner-menu-item"><a href="Recent.html">최근 근황(1)</a></li>
+              <li class="inner-menu-item"><a href="Homework.html">과제(1)</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+      <img  src="MyblogMain\1.PNG"  width="1200" height="350"/>
+      <section id="main-section">
+          <p>I am a programmer.</p>
+          <p>This is Yuseong's pretty blog.</p>
+          <p>You can search using the search bar.</p>
+          <br><br><br>
+          <h2 class="list">&nbsp;List of articles ></h2>
+          <hr style="border: solid 1px black;">
+          <br>
+          <table>
+            <tr>
+                <td> <hr>
+                  <button type="button" onClick="location.href='Homework.html'">
+                        <tab1>[과제]웹프 과제 중!</tab1>
+                  </button></td>
+            </tr>
+            <tr>
+                <td> <hr>
+                  <button type="button" onClick="location.href='Drama.html'">
+                        <tab1>[드라마 리뷰]이태원클라쓰</tab1>
+                  </button></td>
+            </tr>
+            <tr>
+                <td> <hr>
+                  <button type="button" onClick="location.href='Movie.html'">
+                        <tab1>[영화리뷰]해리포터</tab1>
+                  </button></td>
+            </tr>
+            <tr>
+                <td> <hr>
+                  <button type="button" onClick="location.href='Recent.html'">
+                        <tab1>[근황]종강 직전 행복상태</tab1>
+                  </button> <hr></td>
+            </tr>
+            <tr>
+                <td>
+                  <button type="button" onClick="location.href='Dog.html'">
+                        <tab1>[수다떨기]우리집 멍뭉이</tab1>
+                  </button> <hr></td>
+            </tr>
+            <tr>
+                <td>
+                  <button type="button" onClick="location.href='GoodplaceUlsan.html'">
+                        <tab1>[맛집]울산 대게명가</tab1>
+                  </button> <hr></td>
+            </tr>
+            <tr>
+                <td>
+                  <button type="button" onClick="location.href='GoodplaceSeoul.html'">
+                        <tab1>[맛집]세계관 최강자 돈까스 세종대 근처 '가츠시'</tab1>
+                  </button> <hr></td>
+            </tr>
+            <tr>
+                <td>
+                  <button type="button" onClick="location.href='Intro.html'">
+                        <tab1>INTRODUCE MY SELF</tab1>
+                  </button> <hr></td>
+            </tr>
+        </table>
+      </section>
+
+
+      <aside id="main-aside">
+        <div class="search-bar">
+          <form>
+            <input type="text" id="myInput" class="input-search" placeholder="Search.."/>
+          </form>
+        </div>
+          <div class="aside-list">
+            <h3>✿카테고리</h3>
+            <ul>
+              <li><a href="Intro.html"><b>- 프롤로그(1)</b></a></li>
+              <li><a href="Intro.html">└자기소개(1)</a></li>
+              <li><a href="GoodplaceMain.html"><b>- 맛집(2)</b></a></li>
+              <li><a href="GoodplaceSeoul.html">└서울(1)</a></li>
+              <li><a href="GoodplaceUlsan.html">└울산(1)</a></li>
+              <li><a href="TalkMain.html"><b>- 수다떨기(5)</b></a></li>
+              <li><a href="Dog.html">└멍뭉이(1)</a></li>
+              <li><a href="Movie.html">└영화(1)</a></li>
+              <li><a href="Drama.html">└드라마(1)</a></li>
+              <li><a href="Recent.html">└최근 근황(1)</a></li>
+              <li><a href="Homework.html">└과제(1)</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>✿최근 글</h3>
+            <ul>
+              <li><a href="Homework.html">[과제]웹프 과제</a></li>
+              <li><a href="Drama.html">[드라마]이태원</a></li>
+              <li><a href="Movie.html">[영화]해리포터</a></li>
+              <li><a href="Recent.html">[수다]종강 직전</a></li>
+              <li><a href="Dog.html">[수다]멍뭉이</a></li>
+              <li><a href="GoodplaceUlsan.html">[맛집]대게명가</a></li>
+              <li><a href="GoodplaceSeoul.html">[맛집]가츠시</a></li>
+              <li><a href="Intro.html">INTRODUCE</a></li>
+            </ul>
+          </div>
+        </aside>
+    </div>
+    <footer id="main-footer">
+      <br><hr>
+      <a href="#">Created By Jang-Yuseong</a>
+    </footer>
+  </div>
+</body>
+</html>

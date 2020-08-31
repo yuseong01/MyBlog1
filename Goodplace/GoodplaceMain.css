@@ -1,0 +1,56 @@
+.red_circle{
+  position: relative;
+  top: 80px;
+  left: 85px;
+  width:30px;
+  height:30px;
+  border-radius:20px;
+  background: red;
+  opacity: 30%;
+}
+.red_circle1{
+  position: relative;
+  top: 245px;
+  left: 265px;
+  width:30px;
+  height:30px;
+  border-radius:20px;
+  background: red;
+  opacity: 30%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color:black;
+  background-color:white;
+  font-size:1em;
+  border:0;
+  padding:5px 50px;
+  z-index: 2;
+}
+
+.tooltip .tooltiptext {
+  width: 370px;
+  background-color: #464646;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 100px 50px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+  font-size: 15px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #464646 transparent transparent;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="Myblogstyle.css">
+    <link rel="stylesheet" href="Goodplace\GoodplaceMain.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script type="text/javascript" src="Menu.js"></script>
+    <script type="text/javascript" src="Goodplace\GoodplaceMain.js"></script>
+    <script type="text/javascript" src="Search.js"></script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <hr class="hr1">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title"><a href="MyblogMain.html">✿ 오늘도 먹는 유성 ๑•‿•๑ ✿</a></h1>
+          <h2 class="master-description"> YuSeong's Blog </h2>
+        </hgroup>
+      </header>
+      <nav id="main-navigation">
+        <div class="pull-left">
+          <ul class="outer-menu">
+            <li class="outer-menu-item">
+              <span class="menu-title"><a href="Intro.html"><b>프롤로그</b></span>
+              <ul class="inner-menu">
+                <li class="inner-menu-item"><a href="Intro.html">자기소개(1)</a></li>
+              </ul>
+            </li>
+            <li class="outer-menu-item">
+              <span class="menu-title"><b><a href="GoodplaceMain.html">맛집</b></span>
+              <ul class="inner-menu">
+                <li class="inner-menu-item"><a href="GoodplaceSeoul.html">서울(1)</a></li>
+                <li class="inner-menu-item"><a href="GoodplaceUlsan.html">울산(1)</a></li>
+              </ul>
+            </li>
+            <li class="outer-menu-item">
+              <span class="menu-title"><a href="TalkMain.html"><b>수다떨기</b></span>
+              <ul class="inner-menu">
+                <li class="inner-menu-item"><a href="Dog.html">멍뭉이(1)</a></li>
+                <li class="inner-menu-item"><a href="Movie.html">영화(1)</a></li>
+                <li class="inner-menu-item"><a href="Drama.html">드라마(1)</a></li>
+                <li class="inner-menu-item"><a href="Recent.html">최근 근황(1)</a></li>
+                <li class="inner-menu-item"><a href="Homework.html">과제(1)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="pull-right">
+          <div class="search-bar">
+            <form>
+              <input type="text" id="myInput" class="input-search" placeholder="Search.."/>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+                <h1 class="article-title" id="INTRO">✿ GOOD PLACE</h1>
+                <p class="article-date">2020년 06월 27일</p>
+            </div>
+            <div class="article-body">
+              <!--사진 내용-->
+              <div class="tooltip" style="padding:0px;">
+              <img id="img" src="Goodplace\지도.PNG" alt="ICON IMAGE" width="300" align="left">
+              <div class="red_circle" onClick="location.href='GoodplaceSeoul.html'"></div>
+              <div class="red_circle1" onClick="location.href='GoodplaceUlsan.html'"></div>
+              <span class="tooltiptext">
+                <p class="red_circle_word">지역을 선택해주세요:)</p>
+              </span>
+            </div>
+            </div>
+            </div>
+          </article>
+        </section>
+        <footer id="main-footer">
+          <br><hr>
+          <a href="#">Created By Jang-Yuseong</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
